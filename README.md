@@ -25,7 +25,7 @@ $ ./ghlsrepos
 
 To build this program:
 
-First build and install cJSON:
+First build and install cJSON (by default, it will be installed in /usr/local/lib):
 
 ```
 $ git clone git@github.com:DaveGamble/cJSON.git
@@ -51,6 +51,7 @@ $ make
 Run it:
 
 ```
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 $ export GITHUB_USER=your-user-name
 $ export GITHUB_TOKEN=your-github-personal-access-token
 $ ./ghlsrepo
